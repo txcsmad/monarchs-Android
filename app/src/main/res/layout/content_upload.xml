@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:id="@+id/picturePreview"
+        android:src="@drawable/monarchSample"
+        android:maxHeight="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_below="@id/picturePreview"
+        android:id="@+id/notesInput"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/notes_hint" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notesInput"
+        android:layout_alignParentRight="true"
+        android:text="@string/notes_button_txt"
+        android:id="@+id/submitButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="93* N 21* W - 2:30pm 2/3/16"
+        android:id="@+id/metaData"
+        android:layout_alignTop="@+id/submitButton"
+        android:layout_toLeftOf="@+id/submitButton"
+        android:gravity="right"
+        android:paddingTop="15dp"
+        android:paddingRight="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/submitButton" />
+
+</RelativeLayout>
