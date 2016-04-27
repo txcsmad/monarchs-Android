@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/UTMonarchs.iml" filepath="$PROJECT_DIR$/UTMonarchs.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monarchs-Android.iml" filepath="$PROJECT_DIR$/monarchs-Android.iml" />
     </modules>
   </component>
 </project>
