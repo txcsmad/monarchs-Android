@@ -9,7 +9,7 @@
         android:scaleType="centerCrop"
         android:adjustViewBounds="true"
         android:id="@+id/picturePreview"
-        android:src="@drawable/monarchSample"
+        android:src="@drawable/monarch_sample"
         android:maxHeight="10dp"/>
 
     <EditText

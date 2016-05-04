@@ -3,6 +3,7 @@ package com.txcsmad.utmonarchs.ui.activities;
 import android.os.Bundle;
 
 import com.txcsmad.utmonarchs.BaseActivity;
+import com.txcsmad.utmonarchs.R;
 
 /**
  * Created by Jacob on 4/21/16.
@@ -19,6 +20,7 @@ public class UploadActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_upload);
 
         // Activity code goes here
     }

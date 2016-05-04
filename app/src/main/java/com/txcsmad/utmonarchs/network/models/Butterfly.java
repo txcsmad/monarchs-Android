@@ -7,5 +7,13 @@ package com.txcsmad.utmonarchs.network.models;
  */
 public class Butterfly {
 
-    // TODO: add fields
+    /**
+     * Base-64 encoded image (JPEG).
+     */
+    public String image;
+    public String userId;
+    public String classId;
+    public String longitude;
+    public String latitude;
+    public String notes;
 }

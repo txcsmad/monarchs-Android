@@ -7,5 +7,11 @@ package com.txcsmad.utmonarchs.network.models;
  */
 public class UploadResponse {
 
-    // TODO: add fields
+    public String success;
+    public ErrorResponse error;
+
+    public boolean wasRequestSuccessful() {
+        return error == null;
+    }
+
 }
