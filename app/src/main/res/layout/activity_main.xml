@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context=".ui.activities.MainActivity">
 
-    <!-- Edit content_main xml to change activity layout -->
-    <include layout="@layout/content_main" />
+    <TextureView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/control_bar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="User logged in. (FIXME)"
+        android:textColor="@android:color/primary_text_dark"
+        android:textSize="18sp"/>
+
+    <include
+        android:id="@+id/control_bar"
+        layout="@layout/content_control_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"/>
 
 </android.support.design.widget.CoordinatorLayout>
